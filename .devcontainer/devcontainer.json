@@ -1,0 +1,16 @@
+{
+    "name": "LaTeX Development",
+    "build": {
+      "dockerfile": "Dockerfile"
+    },
+    "settings": {
+      "latex-workshop.latex.autoBuild.run": "onSave"
+    },
+    "extensions": [
+      "james-yu.latex-workshop",
+      "yzhang.markdown-all-in-one"
+    ],
+    "forwardPorts": [],
+    "postCreateCommand": "apt-get update && apt-get install -y latexmk"
+  }
+  

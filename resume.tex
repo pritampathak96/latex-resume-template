@@ -1,0 +1,222 @@
+%-------------------------
+% Resume in Latex
+% Author : Pritam Pathak
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{hyphenat}
+\usepackage{fontawesome}
+\input{glyphtounicode}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeEducationHeading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeOrganizationHeading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textit{\small #2} \\
+      \textit{\small#3}
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+%-------------------------------------------
+
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+%---------- HEADING ----------
+\begin{center}
+    \textbf{\Huge \textsc{Pritam Pathak}} \\ \vspace{3pt}
+    \small
+    \faMobile \hspace{.5pt} \href{tel:8697340088}{+91 86973 40088}
+    $|$
+    \faAt \hspace{.5pt} \href{mailto:pritampathak96@gmail.com}{pritampathak96@gmail.com}
+    $|$
+    \faLinkedinSquare \hspace{.5pt} \href{https://www.linkedin.com/in/pritampathak/}{LinkedIn}
+    $|$
+    \faGithub \hspace{.5pt} \href{https://github.com/pritampathak96}{GitHub}
+    $|$
+    \faGlobe \hspace{.5pt} \href{https://medium.com/@pritampathak}{Medium}
+    $|$
+    \faMapMarker \hspace{.5pt} \href{https://maps.app.goo.gl/bTTbft4fXSsYcZ1M8}{Hyderabad, Telangana}
+\end{center}
+
+%----------- EXPERIENCE -----------
+\section{Experience}
+  \vspace{3pt}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Microsoft India Development Center}{Hyderabad, Telangana}
+      {Software Engineer II}{Jul 2019 \textbf{--} Present, Full-time}
+        \resumeItemListStart
+            \resumeItem{Leading scalable and distributed data solutions for Microsoft Devices using Azure, \textbf{resulting in 30\% efficiency boost with data mesh architecture}, improving governance and decentralized ownership in the supply chain, and faster serve to ETL workloads.}
+            \resumeItem{Developed a Data Quality framework for the platform on top of open sourced Amazon Deequ solution which scales to \textbf{400 TBs of data across 300+ streaming and batch entities.}}
+            \resumeItem{Created an LLM-based inventory visibility solution with RAG architecture, automating actions and \textbf{saving over 2,000 man-hours annually} by leveraging Lucene, Vectore Databases, Langchain}
+            \resumeItem{Deployed a near real-time(NRT) \textbf{Fraud detection API} using Apache Spark, Azure ML Studio, and Azure Synapse Analytics, \textbf{saving \$10M annually} by limiting fraudelent customers from placing orders.}
+            \resumeItem{Integrated ERP systems to generate accurate customer call volume forecasts, \textbf{reducing operational costs by \$2M YOY} through efficient staffing strategies.}
+            \resumeItem{Driving the future roadmap for the platform, focusing on technologies like Trino, Microsoft Fabric, and event-driven architectures.}
+        \resumeItemListEnd
+
+        \resumeSubheading
+        {Price Waterhouse Coopers Pvt. Limited}{Kolkata, West Bengal}
+        {Full Stack Engineer Intern}{May 2018 \textbf{--} Jul 2018}
+          \resumeItemListStart
+              \resumeItem{Developed a customer-facing banking solution using Keras and Rasa framework, enhancing user interactions and earning the 'Rasa Hero' recognition for contributions to open-source.}
+          \resumeItemListEnd      
+  \resumeSubHeadingListEnd
+
+
+%----------- EDUCATION -----------
+\section{Education}
+  \vspace{3pt}
+  \resumeSubHeadingListStart
+    
+    \resumeEducationHeading
+      {Indian Institute of Engineering Science and Technology (IIEST), Shibpur}{Howrah, West Bengal}
+      {B.Tech. in Computer Science Engineering;   \textbf{GPA: 8.93}}{Jul 2015 \textbf{--} Jun 2019}
+      \resumeSubHeadingListStart
+      \footnotesize{\item{
+        \textbf{ACM ICPC:} Qualified for Kharagpur Regionals (Dec 2018). \\
+        \textbf{Publications:} Design Of Adaptive Kalman Filter in \href{https://ieeexplore.ieee.org/document/8971170/}{\color{blue}IEEEXplore} and \href{http://dx.doi.org/10.1007/978-981-15-8025-3_38}{\color{blue}Springer}.
+        }}
+      \resumeSubHeadingListEnd
+  \resumeSubHeadingListEnd
+
+
+%----------- SKILLS -----------
+\section{Skills}
+  \vspace{2pt}
+  \resumeSubHeadingListStart
+    \small{\item{
+        
+        \textbf{Languages:}{ SQL, Scala, Python, Java, Kusto, C/C++,  C\#} \\ \vspace{3pt}
+        
+        \textbf{Technologies:}{ MSSQL, MySQL, MongoDB, Apache Spark, Flink, Airflow, Oozie, Hive, Parquet, Delta, Iceberg, Azure, Data Factory, HDInsight, Synapse, Databricks, Fabric, Event Hub, Serverless, Purview, Power BI, IAM, Kafka, Gen AI, Langchain, LLM, RAG, Vector Databases, Flask, Git, Docker} \\ \vspace{3pt}
+        
+        \textbf{Methodologies:}{ Data Warehousing, Data Modeling, ETL/ELT Data pipelines, Performance tuning, Agile, Scrum, OOP, Functional Programming, DevOps, CI/CD, TDD, System Design} \\ \vspace{3pt}
+        
+    }}
+  \resumeSubHeadingListEnd
+
+
+%----------- PROJECTS -----------
+\section{Projects}
+    \vspace{3pt}
+    \resumeSubHeadingListStart
+    
+    \resumeProjectHeading
+    {\textbf{Enhancing Microsoft 365 Copilot using Knowledge Brokers}}{}
+      \resumeItemListStart
+        \resumeItem{Enhanced chatbot experience for Copilot by analyzing user internet footprints and personalizing AI feeds.}
+        \resumeItem{Developed web crawler microservices to create a knowledge graph for automated user recommendations using Graph RAG, LLM, Cosmos DB, Flask, and Kubernetes.}
+      \resumeItemListEnd
+
+    \resumeProjectHeading
+    {\textbf{Carbon Emission Optimization for Sustainable Data Platforms}}{}
+      \resumeItemListStart
+        \resumeItem{Optimized resource usage utilizing Azure Advisor telemetry, enabling teams to offset carbon emissions through a gamified process using Azure Data Explorer, Function Apps, PowerApps, and Power BI.}
+        \resumeItem{Recognized as a \textbf{top 3} SCE project in the Microsoft Global Hackathon FY22.}
+      \resumeItemListEnd
+
+    \resumeSubHeadingListEnd
+
+
+
+%----------- AWARDS & ACHIEVEMENTS -----------
+\section{Awards \& Achievements}
+  \vspace{2pt}
+  \resumeSubHeadingListStart
+    \small{\item{
+      \textbf{Microsoft Azure Certifications:}{ \href{https://learn.microsoft.com/en-us/users/pritampathak-2523/credentials/c51d4b2c65cc60b4}{\color{blue}AZ900} and \href{https://learn.microsoft.com/en-us/users/pritampathak-2523/credentials/a2b277b3db97103f}{\color{blue}DP900} (Sep 2024)} \\ \vspace{3pt}
+        \textbf{Jagadis Bose National Science Talent Search Scholar:}{ Awarded for excellence in science and mathematics through a competitive selection process. (Sep 2016)}
+     }}
+  \resumeSubHeadingListEnd
+
+
+\end{document}
